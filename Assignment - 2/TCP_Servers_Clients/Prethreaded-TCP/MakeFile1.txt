@@ -1,0 +1,4 @@
+all:
+	gcc -pthread -o server2 prethreaded_tcp_server_new.c
+clean:
+	rm -f server2

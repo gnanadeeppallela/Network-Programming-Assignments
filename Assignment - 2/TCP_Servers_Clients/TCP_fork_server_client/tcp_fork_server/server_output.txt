@@ -1,0 +1,31 @@
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/TCP_fork_server_client$ ./server 10000
+
+**************************************************************
+Concurrent TCP File Server Program: listening on socket 10000..
+**************************************************************
+Child processes forked on demand.One per client connection: 
+
+New connection request from 127.0.0.1:39328  ==> 
+forking new child process 31338 to handle the client.. 
+File request from client: two_k_file.txt
+
+File transfer done.
+
+31338 ==>  Closing client connection. Child exiting..
+
+New connection request from 127.0.0.1:39330  ==> 
+forking new child process 31355 to handle the client.. 
+File request from client: one_k_file.txt
+
+File transfer done.
+
+31355 ==>  Closing client connection. Child exiting..
+
+New connection request from 127.0.0.1:39332  ==> 
+forking new child process 31362 to handle the client.. 
+File request from client: one_k_frle.txt
+
+File does not exist. Error msg sent back...
+Closing client connection. child exiting...
+
+

@@ -1,0 +1,4 @@
+all:
+	gcc -pthread -o server1 multithreaded_tcp_server_new.c
+clean:
+	rm -f server1

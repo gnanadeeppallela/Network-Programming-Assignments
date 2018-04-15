@@ -1,0 +1,26 @@
+ubuntu@ubuntu:~/Documents/Multithreaded-TCP$ ./client1 127.0.0.1 10000 one_k_file.txt
+
+***********************************************************************
+TCP test client program. Requesting one_k_file.txt file from server.
+File will be stored in the client local current directory as "test_file.txt"
+
+***********************************************************************
+Connection successful.Requesting file transfer..
+File transfer successful. Closing the socket.
+
+
+ubuntu@ubuntu:~/Documents/Multithreaded-TCP$ ./server1 10000
+
+**************************************************************
+Concurrent TCP File Server Program: listening on socket 10000..
+**************************************************************
+Threads created based on the number of connections recieved: 
+
+New connection request from 127.0.0.1:38008  ==> 
+Child thread created
+File request from client: one_k_file.txt
+
+File transfer done.
+
+8806 ==>  Closing client connection. Child exiting..
+

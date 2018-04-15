@@ -1,0 +1,4 @@
+all:
+	gcc -o client2 prethreaded_test_client_new.c
+clean:
+	rm -f client2

@@ -1,0 +1,10 @@
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/TCP_prefork_server_client$ ./client 127.0.0.1 10000
+
+************************************************************************
+TCP test client: This client connects to the concurrent preforked TCP server
+receives number of preforked child processes at the server and prints it.
+**************************************************************************
+
+Initiating a connection to TCP server ===>  Connection established.
+Number of preforked processes at is server is 5
+kanti@kanti-linux:

@@ -1,0 +1,4 @@
+all:
+	gcc -o client1 multithreaded_test_client_new.c
+clean:
+	rm -f client1

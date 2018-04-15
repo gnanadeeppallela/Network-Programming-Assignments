@@ -1,0 +1,28 @@
+ubuntu@ubuntu:~/Documents/Prethreaded-TCP$ ./client2 127.0.0.1 10000 two_k_file.txt
+
+***********************************************************************
+TCP test client program. Requesting two_k_file.txt file from server.
+File will be stored in the client local current directory as "test_file.txt"
+
+***********************************************************************
+Connection successful.Requesting file transfer..
+File transfer successful. Closing the socket.
+
+ubuntu@ubuntu:~/Documents/Prethreaded-TCP$ ./server2 10000 4
+
+**************************************************************
+Concurrent TCP File Server Program: listening on socket 10000..
+**************************************************************
+Threads created based on the number of connections recieved: 
+
+New connection request from 127.0.0.1:38012  ==> 
+Child thread created 0
+Child thread created 1
+Child thread created 2
+Child thread created 3
+File request from client: two_k_file.txt
+
+File transfer done.
+
+8889 ==>  Closing client connection. Child exiting..
+

@@ -1,0 +1,13 @@
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/TCP_prefork_server_client$ ./server 10000 5
+
+Concurrent preforking TCP ECHO Server Program: listening on socket 10000..
+************************************************************************
+Number of child processes preforked: 5
+
+
+Child process:17735  accepted new client connection from 127.0.0.1
+
+
+Child: 17735 closing the client connection. Returning to the process pool... 
+
+
