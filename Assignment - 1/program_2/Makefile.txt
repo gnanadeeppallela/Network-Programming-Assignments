@@ -1,0 +1,9 @@
+.PHONY: client
+
+all: client
+
+client:
+	gcc client.c -o client
+
+clean:
+	rm client

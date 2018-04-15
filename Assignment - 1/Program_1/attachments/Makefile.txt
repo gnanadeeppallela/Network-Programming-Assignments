@@ -1,0 +1,8 @@
+all:
+
+	gcc -o Daytime UDPDaytime.c
+
+clean:
+
+	rm -f Daytime
+

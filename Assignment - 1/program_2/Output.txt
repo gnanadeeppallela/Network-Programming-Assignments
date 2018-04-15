@@ -1,0 +1,4 @@
+Time from server: 01:34:34
+Time from server: 01:34:34
+
+0 seconds is the difference between both the Time's
