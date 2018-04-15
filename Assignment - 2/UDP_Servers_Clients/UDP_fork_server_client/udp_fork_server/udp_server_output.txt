@@ -1,0 +1,21 @@
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_fork_server_client$ ./server 10000
+
+**************************************************************
+Concurrent UDP File Server Program: listening on socket 10000..
+**************************************************************
+Child processes forked on demand.One per client connection: 
+
+forking new child process 10478 to handle the client 127.0.0.1:18376 
+File request from client: one_k_file.txt 
+File name matched: one_k_file.txt
+10478: File transfer done.Child Exiting..
+forking new child process 10489 to handle the client 127.0.0.1:4259 
+File request from client: t_k_file.txt 
+t_k_file.txt ==> File does not exist on the server. 
+10489: Error msg sent. child exiting...
+forking new child process 10496 to handle the client 127.0.0.1:35546 
+File request from client: one_k_file.txt 
+File name matched: one_k_file.txt
+10496: File transfer done.Child Exiting..
+
+

@@ -1,0 +1,4 @@
+all:
+	gcc -pthread -o server4 udp_server_prethreading.c
+clean:
+	rm -f server4

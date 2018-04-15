@@ -1,0 +1,35 @@
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_fork_server_client$ ./client 127.0.0.1 10000 one_k_file.txt 
+***********************************************************************
+UDP test client program. Requesting one_k_file.txt file from server.
+File will be stored in the client local current directory as "test_file.txt"
+
+***********************************************************************
+Sending datagram requesting file transfer..
+File transfer successful. Closing the socket.Exiting the child.
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_fork_server_client$ ./client 127.0.0.1 10000 t_k_file.txt
+***********************************************************************
+UDP test client program. Requesting t_k_file.txt file from server.
+File will be stored in the client local current directory as "test_file.txt"
+
+***********************************************************************
+Sending datagram requesting file transfer..
+ Error: Requested File does not exist on the server.
+
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_fork_server_client$ cat test_file.txt 
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_fork_server_client$ ./client 127.0.0.1 10000 one_k_file.txt 
+***********************************************************************
+UDP test client program. Requesting one_k_file.txt file from server.
+File will be stored in the client local current directory as "test_file.txt"
+
+***********************************************************************
+Sending datagram requesting file transfer..
+File transfer successful. Closing the socket.Exiting the child.
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_fork_server_client$ cat test_file.txt 
+start test_file_1
+Given a pathname for a file, open() returns a file descriptor, a small, non-negative integer for use in subsequent system calls (read(2), write(2), lseek(2), fcntl(2), etc.). The file descriptor returned by a successful call will be the lowest-numbered file descriptor not currently open for the process.
+The new file descriptor is set to remain open across an execve(2) (i.e., the FD_CLOEXEC file descriptor flag described in fcntl(2) is initially disabled). The file offset is set to the beginning of the file (see lseek(2)).
+
+A call to open() creates a new open file description, an entry in the system-wide table of open files. This entry records the file offset and the file status flags (modifiable via the fcntl() F_SETFL operation). A file descriptor is a reference to one of these entries; this reference is unaffected if pathname is subsequently removed or modified to refer to a different file. The new open file description is initially not shared with any other process, but sharing may arise via fork(2).
+end test_file_1
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_fork_server_client$ 
+

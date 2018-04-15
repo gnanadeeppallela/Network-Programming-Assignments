@@ -1,0 +1,11 @@
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_prefork_server_client$ ./client 127.0.0.1 10000
+
+************************************************************************
+UDP test client:  Connects to the concurrent preforked UDP server
+receives number of preforked child processes at the server and prints it.
+**************************************************************************
+
+Request sent......waiting for server's response
+
+Child pid 4753: Number of preforked processes at is server is 7
+kanti@kanti-linux:~/kanti_sem_3/207/Assgn_2/UDP_prefork_server_client$

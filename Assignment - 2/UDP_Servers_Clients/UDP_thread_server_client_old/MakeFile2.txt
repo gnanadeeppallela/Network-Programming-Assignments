@@ -1,0 +1,4 @@
+all:
+	gcc -pthread -o server3 udp_server_thread.c
+clean:
+	rm -f server3

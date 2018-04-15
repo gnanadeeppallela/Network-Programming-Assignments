@@ -1,0 +1,4 @@
+all:
+	gcc -o client4 udp_test_client_prethreading.c
+clean:
+	rm -f client4

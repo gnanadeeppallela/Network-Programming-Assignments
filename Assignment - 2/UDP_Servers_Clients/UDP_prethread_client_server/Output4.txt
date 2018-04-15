@@ -1,0 +1,26 @@
+
+ubuntu@ubuntu:~/Documents/UDP_prethread_client_server$ ./server4 10000 5
+
+**************************************************************
+Concurrent UDP File Server Program: listening on socket 10000..
+**************************************************************
+Threads created based on the command line argument: 
+
+Thread 1 created for the client 
+Thread 2 created for the client 
+Thread 3 created for the client 
+Thread 4 created for the client 
+Thread 5 created for the client 
+File request from client: one_k_file.txt 
+File name matched: one_k_file.txt
+File transfer done.Thread Exiting..
+
+ubuntu@ubuntu:~/Documents/UDP_prethread_client_server$ ./client4 127.0.0.1 10000 one_k_file.txt
+
+***********************************************************************
+UDP test client program. Requesting one_k_file.txt file from server.
+File will be stored in the client local current directory as "test_file.txt"
+
+***********************************************************************
+Sending datagram requesting file transfer..
+File transfer successful. Closing the socket.Exiting the child.

@@ -1,0 +1,4 @@
+all:
+	gcc -o client3 udp_test_client.c
+clean:
+	rm -f client3
