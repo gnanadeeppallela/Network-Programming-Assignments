@@ -1,0 +1,17 @@
+A. To execute RPCGEN, we require this command: rpcgen rfour1.x
+
+We can see the object files getting generated for both client and server.
+Then, we have to seperate the server and the client files accordingly.
+
+B. For Server, 
+1. To compile the .c files and link them together, we require this command: make -f Makefile.rfour1
+2. Open the terminal, in which all the server files are stored.
+3. To run the server, we should execute this command: ./rfour1d
+
+C. For Client
+1. To compile the .c files and link them together, we require this command: make all
+2. Open the terminal, in which all the client files are stored.
+3. To run the server, we should execute this command: ./rfour1 FILE_NAME LOCATION
+e.g. ./rfour1 testfile1 /home/gnanadeep/Pictures
+4. Verify if the file is copied from the server to client location.
+

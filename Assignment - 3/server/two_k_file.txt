@@ -1,0 +1,13 @@
+start test_file_2
+Given a pathname for a file, open() returns a file descriptor, a small, non-negative integer for use in subsequent system calls (read(2), write(2), lseek(2), fcntl(2), etc.). The file descriptor returned by a successful call will be the lowest-numbered file descriptor not currently open for the process.
+The new file descriptor is set to remain open across an execve(2) (i.e., the FD_CLOEXEC file descriptor flag described in fcntl(2) is initially disabled). The file offset is set to the beginning of the file (see lseek(2)).
+
+A call to open() creates a new open file description, an entry in the system-wide table of open files. This entry records the file offset and the file status flags (modifiable via the fcntl() F_SETFL operation). A file descriptor is a reference to one of these entries; this reference is unaffected if pathname is subsequently removed or modified to refer to a different file. The new open file description is initially not shared with any other process, but sharing may arise via fork(2).
+
+The parameter flags must include one of the following access modes: O_RDONLY, O_WRONLY, or O_RDWR. These request opening the file read-only, write-only, or read/write, respectively.
+
+In addition, zero or more file creation flags and file status flags can be bitwise-or’d in flags. The file creation flags are O_CREAT, O_EXCL, O_NOCTTY, and O_TRUNC. The file status flags are all of the remaining flags listed below. The distinction between these two groups of flags is that the file status flags can be retrieved and (in some cases) modified using fcntl(2). The full list of file creation flags and file status flags is as follows:
+
+Note that open() can open device special files, but creat() cannot create them; use mknod(2) instead.
+On NFS file systems with UID mapping enabled, open() may return a file descriptor but e.g. read(2) requests are denied with EACCES. This is because the client performs open() by checking the permissions, but UID mapping is performed by the server upon read and write requests.
+end test_file_2
